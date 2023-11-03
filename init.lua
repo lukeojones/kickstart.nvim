@@ -203,6 +203,7 @@ require('lazy').setup({
           return vim.fn.executable 'make' == 1
         end,
       },
+      'xiyaowong/telescope-emoji.nvim',
     },
   },
 
@@ -307,6 +308,7 @@ require('telescope').setup {
 
 -- Enable telescope fzf native, if installed
 pcall(require('telescope').load_extension, 'fzf')
+require("telescope").load_extension("emoji")
 
 -- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
