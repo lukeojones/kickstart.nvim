@@ -74,6 +74,9 @@ require('lazy').setup({
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
+  -- Emoji Telescope Plugins
+  'xiyaowong/telescope-emoji.nvim',
+
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
   {
@@ -203,7 +206,6 @@ require('lazy').setup({
           return vim.fn.executable 'make' == 1
         end,
       },
-      'xiyaowong/telescope-emoji.nvim',
     },
   },
 
